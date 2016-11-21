@@ -1,0 +1,166 @@
+
+.viewHorizontalScroll {
+    /* min-width: 920px; */
+    overflow: hidden;
+    -ms-overflow-x: auto; /* IE8 */
+    overflow-x: auto;
+}
+
+.imageOnDialog {
+	margin-left:auto;
+	margin-right:auto;
+	width:65%;
+}
+
+.codeDiv {
+	width:800px; 
+	display:none;
+}
+
+#map_canvas_europe {
+	width: 370px;
+    height: 296px;
+}					
+
+#map_canvas_asia {
+	width: 370px;
+    height: 296px;
+}
+
+
+#other {
+	margin: 0 auto;
+}
+
+
+.mainContainer {
+	width:370px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.headerInside {
+	width:100%;
+	position:relative;
+	cursor:pointer;
+	margin-bottom:20px;
+	margin-top:50px;
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', arial, serif;
+	
+	color: #756851;
+}
+
+/* HEADER */
+
+h1{
+	font-size:58px;
+	text-align:center;
+	border-bottom:1px solid;
+	font-weight: normal;
+}
+
+h2{
+	text-align:right;
+	font-size:20px;
+	font-weight: normal;
+}
+
+/* SPECIAL FONTS */
+.smallHeadline {
+	font-family: Gill Sans, Verdana;
+	font-size: 11px;
+	line-height: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+/* SPECIAL FONTS */
+.bigHeadline {
+	font-family: Gill Sans, Verdana;
+	font-size: 14px;
+	line-height: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+
+/*************************** 
+	ASD MONTE SAN GIOVANNI 
+***************************/
+
+.MsoNormal .extendedText {
+	width: 60%;
+}
+
+.distintaHead {
+	margin-left:8.05pt;
+}
+
+.giorno {
+	width:50%;
+}
+.mese {
+	width:50%;
+}
+.anno {
+	width:50%;
+}
+.capVcap {
+	width:50%;
+}
+.mese {
+	width:50%;
+}
+.nomeCognome {
+	width:50%;
+}
+.ammonito {
+	width:50%;
+}
+.espulso {
+	width:50%;
+}
+.matricola {
+	width:50%;
+}
+.rilascioDoc {
+	width:50%;
+}
+.numDoc {
+	width:50%;
+}
+.tipoDoc {
+	width:50%;
+}
+
+
+
+/********/
+.distintarow {
+	width: 100%;
+}
+
+.1row2colLabel {
+	width:40%;
+	float:left;
+}
+
+.1row2colInput {
+	width:50%;
+	float:left;
+}
+
+
+
+
+
+
+
+
+
+
+

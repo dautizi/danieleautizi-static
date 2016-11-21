@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://www.danieleautizi.com/</loc>
+  <lastmod>2016-11-20T16:19:17+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.danieleautizi.com/static/cv/CV-Daniele_Autizi-EN2016.pdf</loc>
+  <lastmod>2016-11-20T16:19:17+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.danieleautizi.com/adventure/rafting/my_first_rafting-1.html</loc>
+  <lastmod>2016-11-20T16:19:17+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.danieleautizi.com/adventure/lockerroom/locker_room_as_life_style-2.html</loc>
+  <lastmod>2016-11-20T16:19:17+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.danieleautizi.com/linkedin</loc>
+  <lastmod>2016-11-20T16:19:17+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.danieleautizi.com/google-plus</loc>
+  <lastmod>2016-11-20T16:19:17+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.danieleautizi.com/instagram</loc>
+  <lastmod>2016-11-20T16:19:17+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.danieleautizi.com/spotify</loc>
+  <lastmod>2016-11-20T16:19:17+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+</urlset>
