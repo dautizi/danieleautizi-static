@@ -8,7 +8,8 @@ Spotify = {
     properties: {
         "spotifyElementId": "#spotifyElement",
         "spotifyDataUrl" : "data-url",
-        "spotifyDataRound": "data-round"
+        "spotifyDataRound": "data-round",
+        "spotifyIsp": "spotify"
     },
 
     main: function() {
