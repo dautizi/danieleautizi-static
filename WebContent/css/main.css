@@ -2450,3 +2450,17 @@ a.more-link:hover,
 .event h3:before {
 	border-color: #8ACB82;
 	}
+
+
+/*  --------------------------------------------
+
+    Blog/Adventure custom
+    
+    -------------------------------------------- */
+dt.pros {
+    color: green;
+}
+
+dt.cons {
+    color: red;
+}
