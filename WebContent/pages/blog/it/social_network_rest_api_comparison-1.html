@@ -1,0 +1,155 @@
+<div class="entry-content">
+    <p>After having spent one year in designing and developing a membership solution based on 
+    <a href="http://www.gigya.com/product/registration-as-a-service/" title="Gigya RaaS">Gigya RaaS</a> 
+    for the Canadian media giant <a href="http://www.bellmedia.ca/" title="Bell Media">Bell Media</a>, 
+    I was curious to understand better the effort in consuming web api for main social networks, which have been collected 
+    and abstracted from Gigya in my task. Bell company owns many media websites (dozens) which used a personal membership flow, 
+    different per each site, with a final result composed of redundancy on frontend/backend side, slow maintenance process 
+    and difficulties in sharing users between sites. For this reason, in according with customer, we realized a solution starting 
+    by the idea to have only a single membership site, pointed from all the others but still able to guarantee custom 
+    functionalities where required.
+    </p>
+
+    <p>
+    Let's imagine for example a site where editors allow people to do the login by twitter 
+    and facebook, then another site of the same company where editors prefer linkedin rather than google+ and so on, well this 
+    scenario means to develop an out-and-out service to configure and consume backend web api for all required social networks, 
+    including all interaction flows as registration, authentication, reset password et cetera et cetera. That is what Gigya does 
+    and what I was curious to estimate in terms of time and complexity.
+    </p>
+
+    <p>
+    Well done Gigya but now it's my turn. To "play" with that I defined 4 simple rules:
+    </p>
+    <div>
+        <ol>
+            <li>only backend Rest API</li>
+            <li>get user info and the main feature for the specific social</li>
+            <li>3 hours as max developing time for a first draft</li>
+            <li>re-use unofficial libraries if exceed 3 hours</li>
+        </ol>
+    </div>
+
+    <p>Following the list of Rest API I tested:</p>
+	<ul class="social">
+        <li><a class="spotify" href="#spotify"></a></li>
+        <li><a class="instagram" href="#instagram"></a></li>
+        <li><a class="linkedin" href="#linkedin"></a></li>
+        <li><a class="google-plus" href="#google-plus"></a></li>
+    </ul>
+
+    <div id="spotify">
+        <h2>Spotify</h2>
+        <p class="drop-cap">
+        I start by saying <em>Spotify</em> and <em>Instagram</em> share the top for different aspects and this means I found Spotify Rest API 
+        so simple, smart and rich of details. In 3 hours I was able to get back user info and build the playlist list 
+        including an iframe player per each playlist.
+        </p>
+
+        <div class="wp-caption alignleft">
+            <img src="http://danieleautizi.local/images/pages/blog/it/spotify-screenshot.png" title="Spotify Rest API example" alt="Spotify Rest API example">
+            <p class="wp-caption-text">Playlist with player example</p>
+        </div>
+
+		<dl>
+		    <dt class="pros">PROS</dt>
+		    <dd>Perfect documentation, amazing samples for many languages, easy to consume.</dd>
+		    <dt class="cons">CONS</dt>
+		    <dd>I didn't find a way to set a picture for my user.</dd>
+		</dl>
+
+        <p>
+            We are talking about REST Api designed with OAuth 2.0 as authentication model and json as response format. 
+            My personal website <em>www.danieleautizi.com</em> is developed in java, for this reason I used the example 
+            project <a href="https://github.com/thelinmichael/spotify-web-api-java" title="Spotify Rest API Java">Spotify Rest API Java</a> 
+            to start with. 
+        </p>
+
+        <p class="more">
+            <a title="Test Java REST Spotify Rest API" href="http://www.danieleautizi.com/spotify" target="_blank" class="more-link">Test live my Spotify implementation</a>
+        </p>
+    </div>
+
+    <div id="instagram">
+        <h2>Instagram</h2>
+        <p class="drop-cap">
+        My favourite social network ever? <em>Instagram</em>! The <a href="https://www.instagram.com/developer/" title="Instagram Rest API Documentation">documentation</a> 
+        is super complete even if the samples are not as much as I expected, they follow the standard RestFul design and in adding the OAuth 2.0 as authentication 
+        protocol. I was spending more than 2 hours to handle the authentication in a fancy way, for this reason I used the library 
+        <a title="Sachin Handiekar sachin-handiekar jInstagram" href="https://github.com/sachin-handiekar/jInstagram" target="_blank">jInstagram</a>. 
+        Getting user info and last 20 pictures have been posted for the specific account was just a child's play.
+        </p>
+
+        <p>
+            <img src="http://danieleautizi.local/images/pages/blog/it/instagram-screenshot.png" title="Instagram Rest API example" alt="Instagram Rest API example" class="alignright">
+            Instagram REST Api can support json and jsonp as response format. I noticed high performance in response even with quite complex requests.
+        </p>
+
+        <dl>
+            <dt class="pros">PROS</dt>
+            <dd>Amazing documentation, pretty easy to consume, interesting features as geo-localization.</dd>
+            <dt class="cons">CONS</dt>
+            <dd>Not enough samples for different languages.</dd>
+        </dl>
+
+        <p class="more">
+            <a title="Test Java REST Instagram Rest API" href="http://www.danieleautizi.com/instagram" target="_blank" class="more-link">Test live my Instagram implementation</a>
+        </p>
+    </div>
+
+    <div id="linkedin">
+        <h2>Linkedin</h2>
+        <p class="drop-cap">
+        Lately <em>Linkedin</em> represents the most efficient "tool" in recruitment of qualified resources. Actually I 
+        think it comes from a great idea and it works well for the original purpose. I spent only 1 hour to realize I would not get more info
+        than I had already got. The free license key does not allow to have previous positions and technologies tags that represent an 
+        important feature in my opinion. 
+        </p>
+
+        <div class="wp-caption alignleft">
+            <img src="http://danieleautizi.local/images/pages/blog/it/linkedin-screenshot.png" title="Linkedin Rest API example" alt="Linkedin Rest API example">
+            <p class="wp-caption-text">User work position example</p>
+        </div>
+
+        <dl>
+            <dt class="pros">PROS</dt>
+            <dd>Interesting scenario to make business in recruitment sector, documentation good enough.</dd>
+            <dt class="cons">CONS</dt>
+            <dd>Lack of functionalities with the free account.</dd>
+        </dl>
+
+        <p>
+            Again simple REST Api designed with OAuth 2.0 as authentication model but they provide xml in adding to json and jsonp as response format. 
+        </p>
+
+        <p class="more">
+            <a title="Test Java REST Linkedin Rest API" href="http://www.danieleautizi.com/linkedin" target="_blank" class="more-link">Test live my Linkedin implementation</a>
+        </p>
+    </div>
+
+    <div id="google-plus">
+        <h2>Google+</h2>
+        <p class="drop-cap">
+        This Google's "baby" is probably the less used product its team has ever created but I was too much curious to test it. 
+        Consuming <em>Google+</em> Rest API is not distant from consuming any other google service, good documentation, smart and clean sample code. 
+        I had some problems in setting the callback for local environment, even if it was well configured on google application panel. 
+        Anyway 3 hours are enough if I don't consider what I wasted to solve the callback bug.
+        </p>
+
+        <p>
+            <img src="http://danieleautizi.local/images/pages/blog/it/google-plus-screenshot.png" title="Google+ Rest API example" alt="Google+ Rest API example" class="alignright">
+            I think sometimes having many different solutions to the same problem, adds complexity and doubts. However no doubt on google code quality.
+        </p>
+
+        <dl>
+            <dt class="pros">PROS</dt>
+            <dd>Easy to use samples, full set functionalities, high performance, many solutions in consuming ws.</dd>
+            <dt class="cons">CONS</dt>
+            <dd>Configuration is less intuitive than the others.</dd>
+        </dl>
+
+        <p class="more">
+            <a title="Test Java Google+ Rest API" href="http://www.danieleautizi.com/google-plus" target="_blank" class="more-link">Test live my Google+ implementation</a>
+        </p>
+    </div>
+</div>
