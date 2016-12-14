@@ -274,7 +274,7 @@ Logger = {
                     'title="No worries, I just check your ISP. Click and try how I consume your Web API">' +
                     '<i class="spotify"></i>Welcome Spotify Employee!</a></li>';
 
-                var htmlReplace = '<a id="highlightElement" href="http://www.danieleautizi.com/spotify" '+
+                var htmlReplace = '<a id="highlightElement" href="http://www.danieleautizi.com/blog/it/social_network_rest_api_comparison-1.html" '+
                 'title="No worries, I just check your ISP. Click and try how I consume your Web API">' +
                 '<i class="spotify"></i>Welcome Spotify Employee!</a>';
 
