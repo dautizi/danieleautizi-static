@@ -157,8 +157,13 @@ var portfolioKeyword;
             if($(this).attr('aria-required') == "true") {
                 $(this).addClass('required');
             }
-            if($(this).attr('name') == "email") {
+            if($(this).attr('name') == 'email') {
                 $(this).addClass('email');
+            }
+
+            // reCaptcha
+            if ($(this).attr('id') == 'recaptcha-token') {
+              $(this).addClass('required');
             }
         });
         
